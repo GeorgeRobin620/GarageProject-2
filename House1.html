@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House1</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./HouseStyle.css">
+</head>
+<body>
+    <header>
+        <div class="dGarage">
+            <h1 class="heading1">DigitalGarage</h1>
+            <input class ="search" type="text" placeholder="Search items" list="items">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <datalist id="items">
+                <option value="item1">
+                <option value="item2">
+                <option value="item3">
+                <option value="item4">
+                <option value="item5">
+                <option value="item6">
+                <option value="item7">
+                <option value="item8">
+                <option value="item9">
+                <option value="item10">
+                <option value="item11">
+                <option value="item12">
+                <!-- <option value="item13">
+                <option value="item14">
+                <option value="item15">
+                <option value="item16"> -->
+            </datalist>  
+        </div>
+    </header>
+    <main>
+        <div class="all">
+            <div class ="sidePanel">
+                <h1 class="heading">Garage sale near Castle Glen Ave, California</h1> 
+                <div class="reserve">
+                    <form method="get" id="form1">
+                        <h3>Reserve Items Here.</h3>
+                        <label> Enter your email: </label>
+                        <input type="email" id="email" name="email">
+                        <h3>Select Items</h3>
+                        <div class="dropdown-content">
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist1"> item1</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist2"> item2</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist3"> item3</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist4"> item4</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist5"> item5</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist6"> item6</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist7"> item7</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist8"> item8</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist9"> item9</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist10"> item10</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist11"> item11</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist12"> item12</label>
+                            <!-- <label><input type="checkbox" id="checkbox" name="items" value="itemlist13"> item13</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist14"> item14</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist15"> item15</label>
+                            <label><input type="checkbox" id="checkbox" name="items" value="itemlist16"> item16</label> -->
+                        </div>
+                        <input type="submit" id="button1" onclick="getValue()">
+                    </form>
+                </div>
+                <br>
+
+                <iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.668385705099!2d-122.00623912408071!3d37.30299247300722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb55cf934f097%3A0x35d6eede0599c24e!2s5555%20Castle%20Glen%20Ave%2C%20San%20Jose%2C%20CA%2095129!5e0!3m2!1sen!2sus!4v1724137175008!5m2!1sen!2sus" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="page">
+                    <a href='GarageSale.html'><span class="previous">Previous</span></a>
+                    <!-- <a href='GarageSale.html'><span class="next">Next</span></a> -->
+                </div>
+            </div>
+
+            <div class="mainPanel">
+
+                <ul class="itemlist">
+                    <div class="item1 anyItem">
+                        
+                    </div>
+                    <div class="item2 anyItem">
+
+                    </div>
+                    <div class="item3 anyItem">
+        
+                    </div>
+                    <div class="item4 anyItem">
+
+                    </div>
+                </ul>
+                <ul class="itemNames">
+                    <span class="anyNames">Amazon Computer Chair</span>
+                    <span class="anyNames">Cosair Virtuoso Wireless Headset</span>
+                    <span class="anyNames">Dyson Ball Animal 3 Vacuum Cleaner</span>
+                    <span class="anyNames">Fat Quad SE Bike</span>
+                </ul>
+
+                <ul class="itemlist">
+                    <div class="item5 anyItem">
+
+                    </div>
+                    <div class="item6 anyItem">
+
+                    </div>
+                    <div class="item7 anyItem">
+              
+                    </div>
+                    <div class="item8 anyItem">
+     
+                    </div>
+                </ul>
+                <ul class="itemNames">
+                    <span class="anyNames">Nike Air Jordan 1 Blue Flyknit</span>
+                    <span class="anyNames">Razer Huntsman Mini Keyboard</span>
+                    <span class="anyNames">Tool Box</span>
+                    <span class="anyNames">Wilson NFL football</span>
+                </ul>
+
+                <ul class="itemlist">
+                    <div class="item9 anyItem">
+                        Coming Soon
+                    </div>
+                    <div class="item10 anyItem">
+                        Coming Soon
+                    </div>
+                    <div class="item11 anyItem">
+                        Coming Soon
+                    </div>
+                    <div class="item12 anyItem">
+                        Coming Soon
+                    </div>
+                </ul>
+                <ul class="itemNames">
+                    <span class="anyNames">Description</span>
+                    <span class="anyNames">Description</span>
+                    <span class="anyNames">Description</span>
+                    <span class="anyNames">Description</span>
+                </ul>
+
+                <!-- <ul class="itemlist">
+                    <div class="item13 anyItem">
+                        Item13
+                    </div>
+                    <div class="item14 anyItem">
+                        Item14
+                    </div>
+                    <div class="item15 anyItem">
+                        Item15
+                    </div>
+                    <div class="item16 anyItem">
+                        Item16
+                    </div>
+                </ul>
+                <ul class="itemNames">
+                    <span class="anyNames">13.Description and cost</span>
+                    <span class="anyNames">14.Description and cost</span>
+                    <span class="anyNames">15.Description and cost</span>
+                    <span class="anyNames">16.Description and cost</span>
+                </ul> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="Garage.js" src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

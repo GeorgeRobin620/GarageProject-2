@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.welcome{
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: lightgray;
+    height: 15vh;
+    width: 100vw;
+    border: coral solid 5px;
+    display: inline-flex;
+    align-items: center;
+}
+/* .sign{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 6.5vw;
+    height: 0;
+    color: coral;
+    font-size: 70px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+} */
+.greeting{
+    /* margin-top: 2.5vh; */
+    /* position: absolute; */
+    margin-left: 2vw;
+    text-align: left;
+    color: coral;
+    /* width: 50%; */
+    font-size:5vw;
+    /* font-style: italic; */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.search{
+    position: absolute;
+    display: inline;
+    margin-left: 65vw;
+    font-weight: bolder;
+    border: black solid 3px;
+    border-radius: 25px;
+    height: 5vh;
+    width: 30vw;
+    padding-left: 40px;
+    font-size: 1vw;
+}
+.searchIcon{
+    position: absolute;
+    margin-left: 66vw;
+    z-index: 10;
+}
+.sales{
+    background-color: white;
+    width:100w;
+    height: 80vh;
+}
+.anyHouse{
+    display:inline-flex;
+    justify-content: center; 
+    align-items: center;
+    border: #B07156 solid 3px;
+    height: 25vh;
+    width: 15vw;
+    margin-left: 7.5vw;
+    /* margin-right: 4vw; */
+    /* margin-bottom: 45px; */
+    margin-top: 10vh;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* apply shadows to all images*/
+    box-shadow: 10px 10px 25px black;
+
+    color: red;
+    font-size: 2vw;
+    font-weight:bolder;
+}
+.House1{
+    background-image: url(./Images/5555\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+}
+.House2{
+    background-image: url(./Images/5476\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+}
+.House3{
+    background-image: url(./Images/5548\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+}
+.House4{
+    background-image: url(./Images/5558\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+}
+.House5{
+    background-image: url(./Images/5583\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+}
+.House6{
+    background-image: url(./Images/5559\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.webp);
+}
+.House7{
+    background-image: url(./Images/5534\ Castle\ Glen\ Ave\,\ SAN\ JOSE\,\ CA\ 95129.jpg);
+}
+.House8{
+    background-image: url(./Images/5574\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.jpeg);
+}
+
+.anyHouse:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.footerGarage{
+    background-color: lightgray;
+    height: 10vh;
+    width: 100vw;
+    border: coral solid 5px;
+    font-size: 2vw;
+}
+.sign{
+    display: inline;
+    text-align: left;
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 3vw;
+}
+.me{
+    display:inline;
+    margin-left: 20vw;
+}
+.insta{
+    display:inline;
+    margin-left: 7vw;
+}
+.me:hover{
+    color: coral;
+    cursor: pointer;
+}
+.insta:hover{
+    color: coral;
+    cursor: pointer;
+    .insta1 {color: coral};
+}
+.insta1{
+    text-decoration: none;
+    color: black;
+}
+/* Popup container */
+.popup {
+    position: relative;
+}
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 60rem;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    margin-left: -37vw;
+    opacity: 100;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: 3s linear 10s ex1;
+  }
+  
+  /* Add animation (fade in the popup) */
+/* @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+} */
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+@keyframes ex1 {
+    from {background-color: red;}
+    to {background-color: green;}
+}
