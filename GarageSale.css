@@ -8,7 +8,8 @@
     /* display:flex;
     justify-content: center;
     align-items: center; */
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
     height: 15vh;
     width: 100vw;
     border: coral solid 5px;
@@ -53,7 +54,10 @@
     z-index: 10;
 }
 .sales{
-    background-color: white;
+    /* background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #D3D3D3;
     width:100w;
     height: 80vh;
 }
@@ -109,6 +113,7 @@
 }
 .footerGarage{
     background-color: lightgray;
+    background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
     height: 10vh;
     width: 100vw;
     border: coral solid 5px;
