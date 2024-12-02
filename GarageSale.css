@@ -54,57 +54,63 @@
     z-index: 10;
 }
 .sales{
-    /* background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-color: #D3D3D3;
-    width:100w;
-    height: 80vh;
+    width: 100vw;
+    height: 250vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 .anyHouse{
-    display:inline-flex;
+    display: flex;
     justify-content: center; 
-    align-items: center;
+    align-items: center; 
     border: #B07156 solid 3px;
     height: 25vh;
     width: 15vw;
-    margin-left: 7.5vw;
-    /* margin-right: 4vw; */
-    /* margin-bottom: 45px; */
-    margin-top: 10vh;
+    margin-top: 5vh;
     border-radius: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     /* apply shadows to all images*/
     box-shadow: 10px 10px 25px black;
-
     color: red;
     font-size: 2vw;
     font-weight:bolder;
+    text-decoration: none;
 }
 .House1{
     background-image: url(./images/5555\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+    /* margin-left: 7.5vw; */
 }
 .House2{
     background-image: url(./images/5452\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+    /* margin-top: 50vh; */
+    margin-left: 17vw;
 }
 .House3{
     background-image: url(./images/5476\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+    margin-left: 35vw;
 }
 .House4{
     background-image: url(./images/5534\ Castle\ Glen\ Ave\,\ SAN\ JOSE\,\ CA\ 95129.jpg);
+    margin-left: 53vw;
 }
 .House5{
     background-image: url(./images/5548\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+    margin-left: 71vw;
 }
 .House6{
     background-image: url(./images/5558\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
+    margin-left: 53vw;
 }
 .House7{
     background-image: url(./images/5559\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.webp);
+    margin-left: 35vw;
 }
 .House8{
     background-image: url(./images/5574\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.jpeg);
+    margin-left: 17vw;
 }
 
 .anyHouse:hover{
