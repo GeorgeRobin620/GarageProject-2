@@ -136,22 +136,9 @@
     display:inline;
     margin-left: 20vw;
 }
-.insta{
-    display:inline;
-    margin-left: 7vw;
-}
 .me:hover{
     color: coral;
     cursor: pointer;
-}
-.insta:hover{
-    color: coral;
-    cursor: pointer;
-    .insta1 {color: coral};
-}
-.insta1{
-    text-decoration: none;
-    color: black;
 }
 /* Popup container */
 .popup {
