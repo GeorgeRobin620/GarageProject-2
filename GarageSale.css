@@ -5,35 +5,20 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .welcome{
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: lightgray; */
-    background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
-    height: 15vh;
+    background-image: linear-gradient(#ff7c7a, #e6dacf);
+    height: 30vh;
     width: 100vw;
-    border: coral solid 5px;
+    border-bottom: black solid 2px;
     display: inline-flex;
     align-items: center;
 }
-/* .sign{
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 6.5vw;
-    height: 0;
-    color: coral;
-    font-size: 70px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-} */
 .greeting{
-    /* margin-top: 2.5vh; */
-    /* position: absolute; */
     margin-left: 2vw;
     text-align: left;
-    color: coral;
-    /* width: 50%; */
+    -webkit-text-stroke: 2px black; 
+    color: #857e77;
+    text-decoration: double;
     font-size:5vw;
-    /* font-style: italic; */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .search{
@@ -54,12 +39,19 @@
     z-index: 10;
 }
 .sales{
-    background-color: #D3D3D3;
+    /* background-image: url("https://wallpapers.com/images/hd/grey-gradient-background-2400-x-2000-m24tsanvfbk440io.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 250vh; */
+    background-color:#e6dacf;
+    background-image: linear-gradient(#e6dacf, #857e77);
     width: 100vw;
     height: 250vh;
     display: flex;
     justify-content: center; 
     align-items: center; 
+}
+.House{
+    list-style: none;
 }
 .anyHouse{
     display: flex;
@@ -74,70 +66,56 @@
     background-repeat: no-repeat;
     /* apply shadows to all images*/
     box-shadow: 10px 10px 25px black;
-    color: red;
-    font-size: 2vw;
-    font-weight:bolder;
-    text-decoration: none;
-}
-.House1{
-    background-image: url(./images/5555\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
-    /* margin-left: 7.5vw; */
 }
 .House2{
-    background-image: url(./images/5452\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
-    /* margin-top: 50vh; */
     margin-left: 17vw;
 }
 .House3{
-    background-image: url(./images/5476\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
     margin-left: 35vw;
 }
 .House4{
-    background-image: url(./images/5534\ Castle\ Glen\ Ave\,\ SAN\ JOSE\,\ CA\ 95129.jpg);
     margin-left: 53vw;
 }
 .House5{
-    background-image: url(./images/5548\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
     margin-left: 71vw;
 }
 .House6{
-    background-image: url(./images/5558\ Castle\ Glen\ Ave\,\ San\ Jose\,\ CA\ 95129.jpg);
     margin-left: 53vw;
 }
 .House7{
-    background-image: url(./images/5559\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.webp);
     margin-left: 35vw;
 }
 .House8{
-    background-image: url(./images/5574\ Castle\ Glen\ Ave\ San\ Jose\ CA\ 95129.jpeg);
     margin-left: 17vw;
 }
 
-.anyHouse:hover{
+.House1:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 .footerGarage{
-    background-color: lightgray;
-    background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg");
+    /* background-color: #9FA4A9; */
+    /* background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg"); */
+    background-image: linear-gradient(#857e77, #bdb4ab);
     height: 10vh;
     width: 100vw;
-    border: coral solid 5px;
+    border-top: black solid 2px;
     font-size: 2vw;
 }
 .sign{
     display: inline;
     text-align: left;
-    color: coral;
+    -webkit-text-stroke: 2px black; 
+    color: #857e77;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .me{
     display:inline;
     margin-left: 20vw;
 }
 .me:hover{
-    color: coral;
+    color: white;
     cursor: pointer;
 }
 /* Popup container */

@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 .dGarage{
     display: inline-flex;
@@ -55,12 +55,14 @@
     margin-top: 5vh;
     font-size: 1.15vw;
 }
-.mainPanel{
+.mainPanel1{
     width: 80vw;
     height: 100vh;
     background-color: #F1F1F1;
     border-right: lightgray solid 2px;
     border-bottom: lightgray solid 2px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .page{
     margin-top: 2.5vh;
@@ -75,66 +77,40 @@
     color: coral;
     cursor: pointer;
 }
-.itemlist, .itemNames{
-    display: inline-flex;
-    list-style-type: none;
+.container{
+    display: flex;
+    flex-direction: column;
 }
-.anyItem{
-    border-top: lightgray solid 2px;
-    border-left: lightgray solid 2px;
-    border-right: lightgray solid 2px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.topImg{
     width: 12vw;
     height: 22vh;
     margin-left: 6.5vw;
     margin-top: 4vh;
-    box-shadow: -5px -5px 30px #888888, 5px 0px 30px #888888;
+    border: 2px solid black;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.anyNames{
-    border-bottom: lightgray solid 2px;
-    border-left: lightgray solid 2px;
-    border-right: lightgray solid 2px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+.botText{
     width: 12vw;
     height: 5vh;
     margin-left: 6.5vw;
-    text-shadow: 1px 1px 20px black;
-    box-shadow: -5px 0px 30px #888888, 5px 5px 30px #888888;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-size: 1vmax;
+    text-align: center;
 }
-/* .anyNames:hover{
-    text-decoration: underline;
-    cursor: pointer;
-} */
-.anyItem:hover, .anyNames:hover{
+.container:hover{
     cursor: pointer;
     text-decoration: underline;
     transform: scale(1.05);
 }
-.item1{
-    background-image: url(./images/Amazon\ Computer\ Chair.jpg);
+.topImg2{
+    width: 12vw;
+    height: 22vh;
+    margin-left: 6.5vw;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.item2{
-    background-image: url(./images/Cosair\ Virtuoso\ Wireless\ Headset.jpg);
-}
-.item3{
-    background-image: url(./images/Dyson\ Animal.jpeg);
-}
-.item4{
-    background-image: url(./images/Fat\ Quad.webp);
-}
-.item5{
-    background-image: url(./images/Nike\ Air\ Jordan\ 1\ Royal\ Blue\ Flyknit.jpg);
-}
-.item6{
-    background-image: url(./images/Razer\ Huntsman\ Mini\ Gaming\ keyboard.jpg);
-}
-.item7{
-    background-image: url(./images/ToolBox.webp);
-}
-.item8{
-    background-image: url(./images/Wilson\ NFL\ football.webp);
-}
+
