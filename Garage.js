@@ -1,8 +1,3 @@
-function myFunction() {
-    let popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
-
 const form = document.querySelector("form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();

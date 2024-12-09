@@ -1,3 +1,8 @@
+function myFunction() {
+    let popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
 document.getElementById('searchInput').addEventListener('input', function() {
     const query = this.value.toLowerCase();
     const dropdown = document.getElementById('dropdown');
