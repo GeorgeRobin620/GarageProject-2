@@ -57,7 +57,38 @@ body {
     border-color: #4F4A7F; /* Change to Deep Purple on Hover */
     transform: scale(1.05);
 }
+/* Custom Dropdown Styling */
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+    z-index: 999;
+}
 
+.custom-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-dropdown .dropdownItem {
+    padding: 10px;
+    color: #EAEAEA;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: background-color 0.3s ease;
+}
+
+.custom-dropdown .dropdownItem:hover {
+    background-color: #4F4A7F; /* Deep Purple Hover */
+}
 .sales {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +113,7 @@ body {
     width: 22vw;
     height: 22vh;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,12 +127,55 @@ body {
     object-fit: cover;
     border-radius: 15px;
     display: block;
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
 }
 
-.HouseItem:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker Shadow on Hover */
+/* Apply the blur effect only on hover */
+.HouseItem:hover .anyHouse {
+    filter: blur(5px); /* Only blur the image */
 }
+
+/* House details (address and sale status) */
+.houseDetails {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #EAEAEA;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%; /* Ensures the text does not extend beyond the image */
+}
+
+/* Show details on hover */
+.HouseItem:hover .houseDetails {
+    visibility: visible;
+    opacity: 1; /* Show details */
+}
+
+/* Address and Sale Status Styles */
+.address {
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: white;
+}
+
+.saleStatus {
+    font-size: 1vw;
+    color: #FF6F61; /* Coral color for "Sale" */
+    font-weight: bold;
+}
+
+/* Sale Status when there is no sale */
+.HouseItem[data-sale="false"] .saleStatus {
+    color: #EAEAEA; /* Light gray for non-sale */
+}
+
 
 .footerGarage {
     background: linear-gradient(#4F4A7F, #1C3A3A); /* Deep Purple to Dark Teal Gradient */
