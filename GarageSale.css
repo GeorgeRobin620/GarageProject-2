@@ -22,10 +22,37 @@ body {
 .greeting {
     font-size: 5vw;
     color: #FFFFFF; /* White Text */
-    text-decoration: underline;
-    text-shadow: 1px 1px 5px #000000; /* Subtle Black Shadow for Text */
+    /* text-decoration: underline; */
+    text-shadow: 1px 1px 5px #000000; 
     font-weight: bold;
 }
+
+.greeting span {
+    display: inline-block;
+    font-weight: bold;
+    color: #EAEAEA;
+    animation: glowScale 2s ease-in-out infinite;
+}
+
+/* Modern Glow and Scale Animation */
+@keyframes glowScale {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 2.5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        text-shadow: 0 0 7.5px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 2.5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
+        opacity: 1;
+    }
+}
+
 
 .searchContainer {
     position: absolute;
