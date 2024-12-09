@@ -1,144 +1,170 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-.welcome{
-    background-image: linear-gradient(#ff7c7a, #e6dacf);
-    height: 30vh;
-    width: 100vw;
-    border-bottom: black solid 2px;
-    display: inline-flex;
-    align-items: center;
-}
-.greeting{
-    margin-left: 2vw;
-    text-align: left;
-    -webkit-text-stroke: 2px black; 
-    color: #857e77;
-    text-decoration: double;
-    font-size:5vw;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.search{
-    position: absolute;
-    display: inline;
-    margin-left: 65vw;
-    font-weight: bolder;
-    border: black solid 3px;
-    border-radius: 25px;
-    height: 5vh;
-    width: 30vw;
-    padding-left: 40px;
-    font-size: 1vw;
-}
-.searchIcon{
-    position: absolute;
-    margin-left: 66vw;
-    z-index: 10;
-}
-.sales{
-    /* background-image: url("https://wallpapers.com/images/hd/grey-gradient-background-2400-x-2000-m24tsanvfbk440io.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 250vh; */
-    background-color:#e6dacf;
-    background-image: linear-gradient(#e6dacf, #857e77);
-    width: 100vw;
-    height: 250vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-.House{
-    list-style: none;
-}
-.anyHouse{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: #B07156 solid 3px;
-    height: 25vh;
-    width: 15vw;
-    margin-top: 5vh;
-    border-radius: 25px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* apply shadows to all images*/
-    box-shadow: 10px 10px 25px black;
-}
-.House2{
-    margin-left: 17vw;
-}
-.House3{
-    margin-left: 35vw;
-}
-.House4{
-    margin-left: 53vw;
-}
-.House5{
-    margin-left: 71vw;
-}
-.House6{
-    margin-left: 53vw;
-}
-.House7{
-    margin-left: 35vw;
-}
-.House8{
-    margin-left: 17vw;
+    font-family: 'Roboto', sans-serif;
 }
 
-.House1:hover{
-    cursor: pointer;
-    transform: scale(1.05);
+body {
+    background-color: #2B2B2B; /* Dark Gray Background */
+    color: #EAEAEA; /* Light Gray Text */
 }
-.footerGarage{
-    /* background-color: #9FA4A9; */
-    /* background-image: url("https://wallpapers.com/images/featured/brown-aesthetic-wdan69t9mhfvfwqx.jpg"); */
-    background-image: linear-gradient(#857e77, #bdb4ab);
-    height: 10vh;
-    width: 100vw;
-    border-top: black solid 2px;
-    font-size: 2vw;
-}
-.sign{
-    display: inline;
-    text-align: left;
-    -webkit-text-stroke: 2px black; 
-    color: #857e77;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 4vw;
-}
-.me{
-    display:inline;
-    margin-left: 20vw;
-}
-.me:hover{
-    color: white;
-    cursor: pointer;
-}
-/* Popup container */
-.popup {
+
+.welcome {
+    background-image: linear-gradient(#1C3A3A, #4F4A7F); /* Dark Teal to Deep Purple Gradient */
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
     position: relative;
 }
-/* The actual popup (appears on top) */
-.popup .popuptext {
+
+.greeting {
+    font-size: 5vw;
+    color: #FFFFFF; /* White Text */
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px #000000; /* Subtle Black Shadow for Text */
+    font-weight: bold;
+}
+
+.searchContainer {
+    position: absolute;
+    right: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 25vw;
+    height: 5vh;
+    font-size: 1.2vw;
+    padding-left: 3vw;
+    font-weight: 600;
+    border: 2px solid #1C3A3A; /* Dark Teal Border */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background-color: #333333; /* Dark Gray Input Background */
+    color: #EAEAEA; /* Light Gray Text */
+}
+
+.searchIcon {
+    margin-right: 1vw;
+    font-size: 2.5vw;
+    color: #1C3A3A; /* Dark Teal Icon */
+}
+
+.search:hover {
+    border-color: #4F4A7F; /* Change to Deep Purple on Hover */
+    transform: scale(1.05);
+}
+
+.sales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5vw;
+    padding: 3vw;
+    background: linear-gradient(#2B2B2B, #1C3A3A); /* Dark Background with Subtle Gradient */
+    min-height: 75vh;
+}
+
+.HouseList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    width: 100%;
+    margin-top: 4vw;
+}
+
+.HouseItem {
+    list-style: none;
+    width: 22vw;
+    height: 22vh;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.anyHouse {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.HouseItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker Shadow on Hover */
+}
+
+.footerGarage {
+    background: linear-gradient(#4F4A7F, #1C3A3A); /* Deep Purple to Dark Teal Gradient */
+    text-align: center;
+    padding: 3vh 0;
+    font-size: 2.5vw;
+    color: #EAEAEA; /* Light Gray Text */
+    width: 100%;
+}
+
+.sign {
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
+}
+
+.me {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8vw;
+    color: #EAEAEA; /* Light Gray Text */
+    margin: 0 1vw;
+}
+
+.me:hover {
+    color: #FF6F61; /* Coral Hover Color */
+}
+
+.socialLinks {
+    margin-top: 1vh;
+}
+
+.socialLink {
+    font-size: 2.5vw;
+    margin: 0 1.5vw;
+    color: #EAEAEA; /* Light Gray Text */
+    text-decoration: none;
+}
+
+.socialLink:hover {
+    color: #FF6F61; /* Coral Hover Color */
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popuptext {
     visibility: hidden;
-    width: 60rem;
-    background-color: #555;
-    color: #fff;
+    width: 35vw;
+    background-color: #333333; /* Dark Background */
+    color: #EAEAEA; /* Light Gray Text */
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+    padding: 10px;
     position: absolute;
     z-index: 100;
-    bottom: 125%;
-    margin-left: -37vw;
-    opacity: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -110%); /* Centers the popup above the button */
 }
-/* Popup arrow */
-.popup .popuptext::after {
+
+.popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -146,26 +172,58 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #333333 transparent transparent transparent;
 }
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+
+.show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: 3s linear 10s ex1;
-  }
-  
-  /* Add animation (fade in the popup) */
-/* @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-} */
-  
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 100;}
+    animation: fadeIn 0.3s ease-in-out;
 }
-@keyframes ex1 {
-    from {background-color: red;}
-    to {background-color: green;}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .HouseItem {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .footerGarage {
+        font-size: 5vw;
+    }
+
+    .sign {
+        font-size: 5vw;
+    }
+}
+.about {
+    margin: 4vw;
+    padding: 2vw;
+    background-color: #333333; /* Dark Gray Background */
+    color: #EAEAEA; /* Light Gray Text */
+    border-radius: 10px;
+}
+
+.aboutText {
+    font-size: 1.8vw;
+    line-height: 1.6;
+    text-align: center;
+}
+.contact {
+    margin-top: 2vh;
+    font-size: 1.5vw;
+}
+
+.contact a {
+    color: #EAEAEA; /* Light Gray Text */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #FF6F61; /* Coral Hover Color */
 }

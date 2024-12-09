@@ -4,76 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Sale</title>
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="./GarageSale.css">
 </head>
 <body>
     <header>
         <div class="welcome">
-            <h1 class ="greeting">DigitalGarage</h1>
-            <!-- <div class="sign">Find what you need!</div> -->
-            <span class="searchIcon"> 
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <input class ="search" type="text" placeholder="Search DigitalGarage" list="houses">
-            <datalist id="houses">
-                <option value="5452 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5476 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5548 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5558 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5583 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5555 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5534 Castle Glen Ave, San Jose, CA 95129">
-                <option value="5574 Castle Glen Ave, San Jose, CA 95129">
-            </datalist>  
+            <h1 class="greeting">DigitalGarage</h1>
+            <div class="searchContainer">
+                <span class="searchIcon"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input class="search" type="text" placeholder="Search DigitalGarage" list="houses">
+                <datalist id="houses">
+                    <option value="5452 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5476 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5548 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5558 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5583 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5555 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5534 Castle Glen Ave, San Jose, CA 95129"></option>
+                    <option value="5574 Castle Glen Ave, San Jose, CA 95129"></option>
+                </datalist>  
+            </div>
         </div>
     </header>
     <main>
-            <div class ="sales"> 
-                <ul class="House">
-                    <a href='House1.html'>
-                        <li class="House1" >
-                            <img src ="./images/5555 Castle Glen Ave, San Jose, CA 95129.jpg" class = "anyHouse" width="100%" height="100%" >
-                        </li>
-                    </a>
-                    <li class="House2">
-                        <img src ="./images/5452 Castle Glen Ave, San Jose, CA 95129.jpg" class = "anyHouse" width="100%" height="100%">
+        <div class="sales"> 
+            <ul class="HouseList">
+                <a href="House1.html">
+                    <li class="HouseItem">
+                        <img src="./images/5555 Castle Glen Ave, San Jose, CA 95129.jpg" class="anyHouse" alt="House 1">
                     </li>
-                    <li class="House3">
-                        <img src ="./images/5476 Castle Glen Ave, San Jose, CA 95129.jpg" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                    <li class="House4">
-                        <img src ="./images/5534 Castle Glen Ave, SAN JOSE, CA 95129.jpg" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                    <li class="House5">
-                        <img src ="./images/5548 Castle Glen Ave, San Jose, CA 95129.jpg" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                    <li class="House6">
-                        <img src ="./images/5558 Castle Glen Ave, San Jose, CA 95129.jpg" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                    <li class="House7">
-                        <img src ="./images/5559 Castle Glen Ave San Jose CA 95129.webp" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                    <li class="House8">
-                        <img src ="./images/5574 Castle Glen Ave San Jose CA 95129.jpeg" class = "anyHouse" width="100%" height="100%">
-                    </li>
-                </ul>
-            </div>
+                </a>
+                <li class="HouseItem">
+                    <img src="./images/5452 Castle Glen Ave, San Jose, CA 95129.jpg" class="anyHouse" alt="House 2">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5476 Castle Glen Ave, San Jose, CA 95129.jpg" class="anyHouse" alt="House 3">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5534 Castle Glen Ave, SAN JOSE, CA 95129.jpg" class="anyHouse" alt="House 4">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5548 Castle Glen Ave, San Jose, CA 95129.jpg" class="anyHouse" alt="House 5">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5558 Castle Glen Ave, San Jose, CA 95129.jpg" class="anyHouse" alt="House 6">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5559 Castle Glen Ave San Jose CA 95129.webp" class="anyHouse" alt="House 7">
+                </li>
+                <li class="HouseItem">
+                    <img src="./images/5574 Castle Glen Ave San Jose CA 95129.jpeg" class="anyHouse" alt="House 8">
+                </li>
+            </ul>
+        </div>
+        <section class="about">
+            <p class="aboutText">
+                DigitalGarage is going to bring down the dependency on traditional poster garage sales promotion. 
+                Traditional paper posters result in litter of public areas and hardly engage a consumer. 
+                With an easy-to-use digital platform, DigitalGarage offers an effective solution that streamlines and elevates garage sale publishing on aspects of accessibility, effectiveness, and sustainability. 
+                We can make it so much more efficient and organized for buyers and sellers alike by leveraging digital advertising to reduce waste and visual clutter. 
+            </p>
+        </section>
     </main>
-    <script src="Garage.js"></script>
     <footer>
-        <div class ="footerGarage">
-            <div class="sign">Find what you need!</div>
-
+        <div class="footerGarage">
+            <div class="sign">No More Posters, Now Digital</div>
             <div class="me popup" onclick="myFunction()">About Me
                 <i class="fa-solid fa-user"></i>
-                <span class="popuptext" id="myPopup">Hi, My name is George Robin.</span>
+                <span class="popuptext" id="myPopup">Hello, I'm George Robin, the creator behind DigitalGarage. Welcome!</span>
+            </div>
+            <div class="socialLinks">
+                <a href="#" class="socialLink"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="socialLink"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="socialLink"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="contact">
+                <p>Email: <a href="mailto:georgerobin620@gmail.com">@DigitalGarage.com</a></p>
+                <p>Phone: (123) 456-7890</p>
             </div>
         </div>
     </footer>
+    <script src="Garage.js"></script>
 </body>
 </html>
+
