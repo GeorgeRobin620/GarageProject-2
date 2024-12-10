@@ -1,116 +1,336 @@
-*{
-    padding: 0;
+/* HouseStyle.css */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-.dGarage{
-    display: inline-flex;
+
+body {
+    background-color: #2B2B2B; /* Dark Gray Background */
+    color: #EAEAEA; /* Light Gray Text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-container {
+    display: flex;
     align-items: center;
-    width: 100vw;
-    height: 10vh;
-    border: lightgray solid 2px;
-    background-color: white;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #4F4A7F, #2C3E50, #1C3A3A); /* Multi-color Gradient */
+    padding: 40px 5vw; /* Increased padding to add height */
+    color: white;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds depth to text */
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+    overflow: hidden; /* Hide excess content */
 }
-.heading1{
-    font-size: 4vw;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: coral;
+
+/* Hover Effect on Header */
+.header-container:hover {
+    background: linear-gradient(120deg, #2C3E50, #4F4A7F, #1C3A3A); /* Reverse gradient on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
 }
-.search{
-    font-weight: bolder;
-    border: black solid 3px;
-    border-radius: 25px;
-    width: 25vw;
-    height: 4vh;
-    margin-left: 30%;
+
+/* Background Pattern */
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/diag-stripes.png'); /* Subtle diagonal stripe pattern */
+    opacity: 0.1; /* Faint pattern */
+    z-index: 0; /* Behind the content */
 }
-.fa-solid{
-    color: black;
-    height: 7vhs;
-}
-.all{
-    display: flex;
-}
-.sidePanel{
-    width: 20vw;
-    height: 100vh;
-    border-right: lightgray solid 2px;
-    border-bottom: lightgray solid 2px;
-}
-.map{
-    width: 19vw;
-    height: 35vh;
-    margin-top: 5vh;
-}
-.heading{
+
+.title {
+    font-size: 4rem;
     font-weight: bold;
-    font-size: 2vw;
+    color: #EAEAEA; /* Light Gray Text Color */
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px; /* Slight spacing for a clean look */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
 }
-.reserve{
-    margin-top: 5vh;
-    font-size: 1.15vw;
+
+.title span {
+    display: inline-block;
+    position: relative;
 }
-.dropdown{
-    margin-top: 5vh;
-    font-size: 1.15vw;
-}
-.mainPanel1{
-    width: 80vw;
-    height: 100vh;
-    background-color: #F1F1F1;
-    border-right: lightgray solid 2px;
-    border-bottom: lightgray solid 2px;
+
+.search-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
 }
-.page{
-    margin-top: 2.5vh;
+
+.search {
+    width: 40vw;
+    padding: 12px;
+    font-size: 1.5rem;
+    border: 2px solid #EAEAEA;
+    border-radius: 25px;
+    background-color: #333333; /* Dark Gray Input Background */
+    color: #EAEAEA;
+    transition: all 0.3s ease;
+    z-index: 15;
 }
-.next{
-    padding-left: 10vw;
-}
-.previous{
-    padding-left: 0.7vw;
-}
-.next:hover, .previous:hover{
-    color: coral;
-    cursor: pointer;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.topImg{
-    width: 12vw;
-    height: 22vh;
-    margin-left: 6.5vw;
-    margin-top: 4vh;
-    border: 2px solid black;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.botText{
-    width: 12vw;
-    height: 5vh;
-    margin-left: 6.5vw;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    font-size: 1vmax;
-    text-align: center;
-}
-.container:hover{
-    cursor: pointer;
-    text-decoration: underline;
+
+.search:hover,.search:focus {
+    border-color: #FF6F61; /* Coral Border on Hover */
+    outline: none;
     transform: scale(1.05);
 }
-.topImg2{
-    width: 12vw;
-    height: 22vh;
-    margin-left: 6.5vw;
-    border: 2px solid black;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.search-container i {
+    font-size: 2rem;
+    color: #FF6F61; /* Coral Icon */
+}
+
+/* Main Content */
+.container {
+    padding: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    background: linear-gradient(#2B2B2B, #1C3A3A); /* Dark Gradient Background */
+    min-height: 100vh;
+    margin-top: -1px; /* Reduces any unwanted gap or line between the header and container */
+    transition: background-color 0.3s ease; /* Smooth transition for color */
+}
+
+/* House List Section */
+.house-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+/* House Item */
+.house-item {
+    position: relative;
+    width: 20vw; /* Set a percentage-based width for consistency */
+    height: 35vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: #333333; /* Dark Gray Background for Items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.house-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.house-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-details {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.house-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.house-status {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1C3A3A;
+    color: white;
+}
+
+.footer p {
+    font-size: 1.2rem;
+}
+
+/* Subtitle/Description Styling */
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 40px 10vw; /* Adds spacing and makes the text more centered */
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)); /* Subtle gradient background */
+    border-top-left-radius: 10px; /* Rounded corners for a softer look */
+    border-top-right-radius: 10px;
+    border-top: 2px solid #EAEAEA; /* Shared border with form elements */
+    border-left: 2px solid #EAEAEA;
+    border-right: 2px solid #EAEAEA;
+    max-width: 90%; /* Ensures the text doesn't stretch too wide */
+    line-height: 1.6; /* Increases line height for readability */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center the content inside */
+}
+
+/* On hover effect */
+.subtitle:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)); /* Slightly darker on hover */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Decorative Bottom Border (Optional) */
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #FF6F61; /* Coral Color */
+    margin: 20px auto 0;
+}
+
+/* Form */
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Make form take full width of subtitle box */
+    align-items: center;
+    border-top: 2px solid #EAEAEA;
+    border-left: 2px solid #EAEAEA;
+    border-right: 2px solid #EAEAEA;
+    padding-top: 20px;
+}
+
+.reserve-form label {
+    font-size: 1rem;
+    color: #EAEAEA;
+}
+
+.reserve-form input[type="email"] {
+    padding: 10px;
+    border: 2px solid #EAEAEA;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #EAEAEA;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.reserve-form input[type="email"]:focus {
+    outline: none;
+    border-color: #FF6F61; /* Coral Border on Focus */
+}
+
+.reserve-form .item-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.reserve-form button {
+    padding: 12px 20px;
+    background-color: #FF6F61;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-form button:hover {
+    background-color: #E64A39;
+}
+
+.item-checkbox input {
+    margin-right: 10px;
+}
+
+/* Map Styling */
+.map {
+    width: 100%;
+    height: 300px;
+    border: 3px solid #EAEAEA; /* Solid light border */
+    border-radius: 10px; /* Rounded corners for a soft, modern look */
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)); /* Subtle gradient border */
+}
+
+/* Hover effect for the map */
+.map:hover {
+    border-color: #FF6F61; /* Coral border on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Optional decorative border effect */
+.map::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #FF6F61; /* Coral color border */
+    border-radius: 12px;
+    pointer-events: none; /* Ensures it doesn't interfere with map interaction */
+    z-index: -1; /* Keeps it behind the map */
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 5vw;
+    }
+
+    .search {
+        width: 50vw;
+        font-size: 1.5vw;
+    }
+
+    .house-item {
+        width: 40vw; /* Adjusted for smaller screens */
+        height: 30vh;
+    }
+
+    .house-title {
+        font-size: 2.5vw;
+    }
+
+    .house-status {
+        font-size: 2vw;
+    }
+
+    .footer {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .house-item {
+        width: 90vw;
+        height: 50vh;
+    }
 }
 
