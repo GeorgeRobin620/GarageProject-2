@@ -30,31 +30,6 @@
         </div>
     </header>
     <main class="container">
-        <aside class="about">
-            <p class="subtitle">Find the best deals. Reserve items now to secure your favorites.</p>
-            <form class="reserve-form">
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <h3>Select Items:</h3>
-                <div class="item-checkbox">
-                    <label><input type="checkbox" name="items" value="Amazon Computer Chair"> Amazon Computer Chair</label>
-                    <label><input type="checkbox" name="items" value="Cosair Virtuoso Wireless Headset"> Cosair Virtuoso Wireless Headset</label>
-                    <label><input type="checkbox" name="items" value="Dyson Ball Animal 3 Vacuum Cleaner"> Dyson Ball Animal 3 Vacuum Cleaner</label>
-                    <label><input type="checkbox" name="items" value="Fat Quad SE Bike"> Fat Quad SE Bike</label>
-                    <label><input type="checkbox" name="items" value="Nike Air Jordan 1 Blue Flyknit"> Nike Air Jordan 1 Blue Flyknit</label>
-                    <label><input type="checkbox" name="items" value="Razer Huntsman Mini Keyboard"> Razer Huntsman Mini Keyboard</label>
-                    <label><input type="checkbox" name="items" value="Wilson NFL football"> Wilson NFL football</label>
-                    <label><input type="checkbox" name="items" value="Tool Box"> Tool Box</label>
-                </div>
-                
-                <button type="submit">Reserve Items</button>
-            </form>
-            <iframe class="map" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.668385705099!2d-122.00623912408071!3d37.30299247300722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb55cf934f097%3A0x35d6eede0599c24e!2s5555%20Castle%20Glen%20Ave%2C%20San%20Jose%2C%20CA%2095129!5e0!3m2!1sen!2sus!4v1724137175008!5m2!1sen!2sus" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </aside>
         <section class="house-list">
             <div class="house-item">
                 <img class="house-img" src="./images/Amazon Computer Chair.jpg" alt="Amazon Computer Chair">
@@ -113,10 +88,39 @@
                 </div>
             </div>
         </section>
+        <aside class="about">
+            <p class="subtitle">Find the best deals. Reserve items now to secure your favorites.</p>
+            <form class="reserve-form">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <h3>Select Items:</h3>
+                <div class="item-checkbox">
+                    <label><input type="checkbox" name="items" value="Amazon Computer Chair"> Amazon Computer Chair</label>
+                    <label><input type="checkbox" name="items" value="Cosair Virtuoso Wireless Headset"> Cosair Virtuoso Wireless Headset</label>
+                    <label><input type="checkbox" name="items" value="Dyson Ball Animal 3 Vacuum Cleaner"> Dyson Ball Animal 3 Vacuum Cleaner</label>
+                    <label><input type="checkbox" name="items" value="Fat Quad SE Bike"> Fat Quad SE Bike</label>
+                    <label><input type="checkbox" name="items" value="Nike Air Jordan 1 Blue Flyknit"> Nike Air Jordan 1 Blue Flyknit</label>
+                    <label><input type="checkbox" name="items" value="Razer Huntsman Mini Keyboard"> Razer Huntsman Mini Keyboard</label>
+                    <label><input type="checkbox" name="items" value="Wilson NFL football"> Wilson NFL football</label>
+                    <label><input type="checkbox" name="items" value="Tool Box"> Tool Box</label>
+                </div>
+                
+                <button type="submit">Reserve Items</button>
+            </form>
+            <iframe class="map" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.668385705099!2d-122.00623912408071!3d37.30299247300722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb55cf934f097%3A0x35d6eede0599c24e!2s5555%20Castle%20Glen%20Ave%2C%20San%20Jose%2C%20CA%2095129!5e0!3m2!1sen!2sus!4v1724137175008!5m2!1sen!2sus" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </aside>
     </main>
     <footer class="footer">
-        <p>Find Your Next Treasure!</p>
+        <div class="footer-content">
+            <p>Find Your Next Treasure!</p>
+        </div>
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
     </footer>
+    <script src="Garage.js"></script>
 </body>
 </html>
 
