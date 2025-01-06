@@ -297,6 +297,45 @@ body {
 }
 
 
+.footer {
+    background: linear-gradient(120deg, #4F4A7F, #2C3E50, #1C3A3A);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+
+.back-to-top {
+    background: #ffffff;
+    border: none;
+    color: #2C3E50;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #2C3E50;
+    color: white;
+}
+
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -331,6 +370,27 @@ body {
     .house-item {
         width: 90vw;
         height: 50vh;
+    }
+    .footer-content p {
+        font-size: 1.2rem;
+    }
+
+    .back-to-top {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content p {
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 }
 
