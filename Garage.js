@@ -1,20 +1,33 @@
-const form = document.querySelector("form");
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    let email = document.getElementById("email");
-    console.log(email.value);
-});
+const form = document.querySelector(".reserve-form");
 
-function getValue() {
-    let checkboxes = document.getElementsByName('items');
-    let result = "";
-    for (var i = 0; i < checkboxes.length; i++) {
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Get email value
+    const email = document.getElementById("email").value;
+
+    // Get selected items
+    const checkboxes = document.getElementsByName("items");
+    let selectedItems = [];
+    for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
-            result += checkboxes[i].value + " " + " items, ";
+            selectedItems.push(checkboxes[i].value);
         }
     }
-    console.log("<p> You have selected : " + result);
-};
+
+    // Validate that at least one item is selected
+    if (selectedItems.length === 0) {
+        alert("Please select at least one item.");
+        return;
+    }
+
+      // Create the reservation message
+    const reservedItems = selectedItems.join(", ");
+    const message = `Your reservation has been made!\n\nEmail: ${email}\nItems Reserved: ${reservedItems}`;
+
+    // Show the message in a popup window
+      alert(message);
+});
 
 // Smooth scroll to the top function
 function scrollToTop() {
